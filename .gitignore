@@ -1,0 +1,7 @@
+node_modules/
+.DS_Store
+*.log
+CLAUDE.md
+.claude
+.idea
+PLAN-microcks-skills.md
