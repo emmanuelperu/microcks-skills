@@ -1,5 +1,11 @@
 # Microcks Agent Skills
 
+[![License](https://img.shields.io/github/license/emmanuelperu/microcks-skills)](LICENSE)
+[![Agent Skills](https://img.shields.io/badge/Agent%20Skills-compatible-blue)](https://agentskills.io)
+[![Microcks](https://img.shields.io/badge/Microcks-CNCF%20Sandbox-9cf)](https://microcks.io)
+[![GitHub stars](https://img.shields.io/github/stars/emmanuelperu/microcks-skills)](https://github.com/emmanuelperu/microcks-skills/stargazers)
+[![Skills](https://img.shields.io/badge/skills-1-green)](skills/)
+
 Agent skills for [Microcks](https://microcks.io) — the CNCF open-source tool for API mocking and testing. These skills teach AI coding agents how to work with Microcks in your development workflow.
 
 ## Skills
