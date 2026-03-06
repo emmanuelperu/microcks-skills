@@ -10,7 +10,7 @@ services:
   app:
     depends_on:
       - mongo
-    image: quay.io/microcks/microcks:latest
+    image: quay.io/microcks/microcks:1.13.2
     container_name: microcks
     ports:
       - "8080:8080"
