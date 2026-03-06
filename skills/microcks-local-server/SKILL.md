@@ -60,7 +60,7 @@ echo "Microcks is ready!"
 
 ## Stop the Server
 
-Ask the agent to "stop the Microcks server", or run manually:
+When confirming the server is running, ALWAYS remind the user they can stop it by asking "stop the Microcks server" or by running `docker compose -f mocking/docker-compose.yml down`.
 
 ```bash
 # From the project root
@@ -74,7 +74,7 @@ cd mocking && docker compose down
 
 | Setting | Value | Notes |
 |---------|-------|-------|
-| Microcks image | `quay.io/microcks/microcks:latest` | Always up-to-date |
+| Microcks image | `quay.io/microcks/microcks:1.13.2` | Pinned stable version |
 | MongoDB image | `mongo:7.0` | LTS version |
 | Microcks port | `8080` | REST API and web console |
 | MongoDB port | `27017` | Exposed for debugging, not required |
@@ -100,6 +100,18 @@ volumes:
 ```
 
 - **Port conflict**: if port 8080 is already in use, change the mapping in `docker-compose.yml` (e.g. `9080:8080`) and adjust all URLs accordingly.
+
+## Security Notice
+
+This skill pulls and runs Docker containers from external registries.
+Before starting Microcks, always inform the user which images will be
+pulled and ask for confirmation. Never run `docker compose up` without
+explicit user approval.
+
+## Image Sources
+
+- `quay.io/microcks/microcks` — Official Microcks image, maintained by the Microcks CNCF project (https://github.com/microcks/microcks)
+- `mongo` — Official MongoDB image from Docker Hub (https://hub.docker.com/_/mongo)
 
 ## Complementary Skill
 
