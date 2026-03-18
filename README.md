@@ -4,7 +4,7 @@
 [![Agent Skills](https://img.shields.io/badge/Agent%20Skills-compatible-blue)](https://agentskills.io)
 [![Microcks](https://img.shields.io/badge/Microcks-CNCF%20Sandbox-9cf)](https://microcks.io)
 [![GitHub stars](https://img.shields.io/github/stars/emmanuelperu/microcks-skills)](https://github.com/emmanuelperu/microcks-skills/stargazers)
-[![Skills](https://img.shields.io/badge/skills-1-green)](skills/)
+[![Skills](https://img.shields.io/badge/skills-3-green)](skills/)
 
 Agent skills for [Microcks](https://microcks.io) — the CNCF open-source tool for API mocking and testing. These skills teach AI coding agents how to work with Microcks in your development workflow.
 
@@ -13,6 +13,8 @@ Agent skills for [Microcks](https://microcks.io) — the CNCF open-source tool f
 | Skill | Description |
 |-------|-------------|
 | [microcks-local-server](skills/microcks-local-server/) | Start a local Microcks server with Docker Compose for API mocking and testing |
+| [microcks-openapi-mocking](skills/microcks-openapi-mocking/) | Write OpenAPI examples that work with Microcks dispatchers for API mocking |
+| [microcks-import-artifacts](skills/microcks-import-artifacts/) | Import OpenAPI specs into Microcks and auto-configure dispatchers |
 
 ## Quick Install
 
